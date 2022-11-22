@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+:root{
+    --dateSize: 60px;
+}
+
+body {
+    background-color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*  
+/* Мой календарь отличается фоном
+/* Разобраться в Emment visual code. Скопировать из Emment.html
+Тасклист: 
+1- Функция календаря с просмотрой даты 
+2- Возможность добавлять в дату таски с временными тегами 
+3- Календарь на 2023 год с измененными названиями
+4- ? Уведомления. Возможно реализовать через чат бота. 
+5- ? Чат бот. Возможность запросить расписание на дату, возможность заполнить дату
+через чат бота. 
+6- ? Ебанный бот. Важно. 
+7- Регистрация. Добавление пользователя в БД. Управление тасками через профиль. 
+8- Задание регулярных тасков (* Проверить почту вечером каждого вторника*) 
+9- ? Ебанный бот должен указывать, что пришло по регулярному таску. 
+10- ?? Мультидоступ? Общий доступ? Гостевой просмотр тасков? 
+11- Отдельная страница с настройкой тасков и листом тасков. 
+12- ??? Уход от Ебанной системы ебанного календаря к адекватному и без мата? Да ну, 
+хуйня какая- то. 
+13- Выложить в репразиторий на Гите. 
+14- Радоваться? */
+
+
+.calendar {
+
+}
+
+.month {
+
+}
+
+.month_title {
+
+}
+
+.month_name {
+    border-right: 1800px;
+    background-image: linear-gradient(90deg, #FFED00 ,  #cf0e78 );
+    background-size: 4%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.month_content_box {
+    display: inline-grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 2px;
+}
+.month_date {           /* Сами дни */
+    width: var(--dateSize);
+    height: var(--dateSize);
+    background-color: rgb(94, 94, 94);
+    color:#ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.month_date_accent{         /* Праздничные дни, акценты */
+    color: #E6007E;
+    
+}
