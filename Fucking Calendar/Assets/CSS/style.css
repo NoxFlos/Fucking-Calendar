@@ -39,7 +39,6 @@ body {
     height: var(--dateSize);
     background-color: rgb(94, 94, 94);
     color:#ffffff;
-
     display: flex;
     align-items: center;
     justify-content: center;
