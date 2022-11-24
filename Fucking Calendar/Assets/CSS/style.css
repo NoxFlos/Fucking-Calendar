@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
 
 :root{
-    --dateSize: 60px;
+    --dateSize: 50px;
 }
 
 body {
@@ -9,24 +9,60 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+<<<<<<< Updated upstream
 .calendar {
+=======
+.head{
+    background-image: linear-gradient(90deg, #FFED00 ,  #cf0e78 );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.title{         /* Параметры заголовка "Ебанный". */
+    font-size: 100px;  
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.desc{   /* Описание, включающее в себя "Календарь" и "2022" */
+    display:flex;
+    font-size: 50px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+>>>>>>> Stashed changes
+
+.calendar {
+    text-transform: uppercase;
+    line-height: 2.5em;
+    font-weight: 900;
 }
 
 .month {
 
 }
 
-.month_title {
-
+.month_title {      /* Параметры заголовка над месяцем. "Ебанный холод и тд." */
+    font-size: 32px;
+    color: #e4e4e4;
+    margin-bottom: 16px;
 }
 
-.month_name {
+.month_name {       /* Параметры имени месяца. "Январь и тд." */
     border-right: 1800px;
     background-image: linear-gradient(90deg, #FFED00 ,  #cf0e78 );
+<<<<<<< Updated upstream
     background-size: 75px; 
+=======
+    background-size: 98px;
+>>>>>>> Stashed changes
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
+    margin-bottom: 16px;
+    font-size: 20px;
 }
 
 .month_content_box {
@@ -36,8 +72,7 @@ body {
 }
 .month_date {           /* Сами дни */
     width: var(--dateSize);
-    height: var(--dateSize);
-    background-color: rgb(94, 94, 94);
+    height: calc(var(--dateSize) /2 );
     color:#ffffff;
     display: flex;
     align-items: center;
@@ -46,5 +81,4 @@ body {
 
 .month_date_accent{         /* Праздничные дни, акценты */
     color: #E6007E;
-    
 }
