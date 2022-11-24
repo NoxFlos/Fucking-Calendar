@@ -9,9 +9,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-<<<<<<< Updated upstream
-.calendar {
-=======
+.calendar {}
+
 .head{
     background-image: linear-gradient(90deg, #FFED00 ,  #cf0e78 );
     background-size: 100%;
@@ -33,7 +32,6 @@ body {
     justify-content: space-between;
     margin-bottom: 32px;
 }
->>>>>>> Stashed changes
 
 .calendar {
     text-transform: uppercase;
@@ -54,11 +52,8 @@ body {
 .month_name {       /* Параметры имени месяца. "Январь и тд." */
     border-right: 1800px;
     background-image: linear-gradient(90deg, #FFED00 ,  #cf0e78 );
-<<<<<<< Updated upstream
     background-size: 75px; 
-=======
     background-size: 98px;
->>>>>>> Stashed changes
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     margin-bottom: 16px;
