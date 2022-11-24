@@ -9,15 +9,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.calendar{
-
-}
-
 .head{
     background-image: linear-gradient(90deg, #FFED00 ,  #cf0e78 );
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .title{         /* Параметры заголовка "Ебанный". */
@@ -41,8 +39,8 @@ body {
     font-weight: 900;
 }
 
-.month {
-
+.month {    
+    font-weight: 900;
 }
 
 .month_title {      /* Параметры заголовка над месяцем. "Ебанный холод и тд." */
@@ -56,6 +54,7 @@ body {
     background-image: linear-gradient(90deg, #FFED00 ,  #cf0e78 );
     background-size: 75px; 
     background-size: 98px;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     margin-bottom: 16px;
