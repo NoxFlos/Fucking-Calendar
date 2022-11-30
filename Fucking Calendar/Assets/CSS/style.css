@@ -38,6 +38,9 @@ body {
     line-height: 2.5em;
     font-weight: 900;
     user-select: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 32px;
 }
 
 .month {    
@@ -52,9 +55,8 @@ body {
 
 .month_name {       /* Параметры имени месяца. "Январь и тд." */
     border-right: 1800px;
-    background-image: linear-gradient(90deg, #FFED00 ,  #cf0e78 );
-    background-size: 75px; 
-    background-size: 98px;
+    background-image: linear-gradient(90deg, #ffbb00 ,  #cf0e78 );
+    background-size: 118px; 
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
