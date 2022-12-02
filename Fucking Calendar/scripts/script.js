@@ -4,79 +4,66 @@ const dom = {
 
 console.log(dom)
 
-const monthLength = [31,28,31,30,31,30,31,31,30,31,30,31] // Для невисокосного
-const monthNames = [
-'Январь', 
-'Ферваль', 
-'Март', 
-'Апрель', 
-'Май', 
-'Июнь', 
-'Июль', 
-'Август', 
-'Сентябрь',
-'Октябрь',
-'Ноябрь',
-'Декабрь',
-]
+ // Для невисокосного
+
 const months = [
     {
-        title: 'ЕБАННЫЙ <br> НОВЫЙ ГОД',
+        title: 'ЕБАНЫЙ <br> НОВЫЙ ГОД',
         name: 'ЯНВАРЬ',
         days: 31,
     },
     {
-        title: '',
+        title: 'ЕБАНЫЙ <br> ХОЛОД',
         name: 'ФЕВРАЛЬ',
         days: 28,
     },
     {
-        title: '',
+        title: 'ЕБАНАЯ <br> ГРЯЗЬ',
         name: 'МАРТ',
         days: 31,
     },
     {
-        title: '',
+        title: 'ЕБАНЫЕ <br> ШУТНИКИ',
         name: 'АПРЕЛЬ',
         days: 30,
     },
     {
-        title: '',
+        title: 'ЕБАНЫЙ <br> ДЕНЬ ТРУДА',
         name: 'МАЙ',
         days: 31,
     },
     {
-        title: '',
+        title: 'ЕБАНЫЕ <br> ШКОЛЬНИКИ',
         name: 'ИЮНЬ',
         days: 30,
     },
     {
-        title: '',
+        title: 'ЕБАНАЯ <br> ЖАРА',
         name: 'ИЮЛЬ',
         days: 31,
     },
     {
-        title: '',
+        title: 'ЕБАНЫЙ <br> ОТПУСК',
         name: 'АВГУСТ',
         days: 31,
     },
     {
-        title: '',
+        title: 'ЕБАНОЕ <br> 3 СЕНТЯБРЯ',
         name: 'СЕНТЯБРЬ',
         days: 30,
     },
     {
-        title: '',
+        title: 'ЕБАНЫЙ <br> ДОЖДЬ',
         name: 'ОКТЯБРЬ',
         days: 31,
     },
     {
-        title: '',
+        title: 'ЕБАНЫЕ <br> СКИДКИ',
         name: 'НОЯБРЬ',
         days: 30,
     },
     {
-        title: '',
+        title: 'ЕБАНЫЕ <br> ПОДАРКИ',
         name: 'ДЕКАБРЬ',
         days: 31,
     },
@@ -93,9 +80,9 @@ const weekDayNames = [  //Массив дней недели.
 ]
 
 
-function renderMonth(monthNumber, year){  //Пока year сходил нахуй, пока не следим за високосным годом
-    const monthName = monthNames[monthNumber]
-    const monthHeadString =  buildMonthHead('Заголовок', monthName) //Шапка
+function renderMonth(monthIdx, year){  //Пока year сходил нахуй, пока не следим за високосным годом
+    const month = months [monthIdx]
+    const monthHeadString =  buildMonthHead(month.title, month.name) //Шапка
     const monthBox = document.createElement('div')
     monthBox.className ='month'
     monthBox.innerHTML = monthHeadString
